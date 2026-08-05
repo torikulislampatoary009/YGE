@@ -188,9 +188,16 @@ async function handleTracking(event) {
         document.getElementById(
             "trackingNumber"
         );
+//New adding for URL-Redirect
+      const trackingId = input.value.trim();
+     // DHL Global Tracking URL Template
+      const dhlUrl = `https://www.dhl.com/global-en/home/tracking/tracking-express.html?submit=1&tracking-id=${encodeURIComponent(trackingId)}`;
 
-
-    const button =
+      // Open DHL tracking page in a new tab securely
+      window.open(dhlUrl, '_blank', 'noopener,noreferrer');
+//upon three line
+    
+   /* const button =
         document.getElementById(
             "trackingButton"
         );
@@ -285,7 +292,7 @@ async function handleTracking(event) {
         button.textContent =
             "Track Shipment";
 
-    }
+    }*/
 
 }
 function renderTrackingResult(data) {
