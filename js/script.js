@@ -240,7 +240,7 @@ async function handleTracking(event) {
         const response =
             await fetch(
 
-                `http://localhost:5000/api/shipments/track/${encodeURIComponent(trackingNumber)}`
+                `http://localhost:5000/api/public/tracking/${encodeURIComponent(trackingNumber)}`
 
             );
 
