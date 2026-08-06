@@ -753,7 +753,7 @@ async function handleQuoteSubmit(
 
         const response =
             await fetch(
-                "http://localhost:5000/api/quotes",
+                "https://yge-backend-production.up.railway.app:5000/api/quotes",
                 {
 
                     method: "POST",
