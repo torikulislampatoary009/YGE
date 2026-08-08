@@ -753,7 +753,7 @@ async function handleQuoteSubmit(
 
         const response =
             await fetch(
-                "https://yge-backend-production.up.railway.app/api/quotes",
+                "https://yge-backend.onrender.com/api/quotes",
                 {
 
                     method: "POST",
