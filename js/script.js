@@ -25,6 +25,49 @@ const currentYear = document.getElementById("current-year");
 
 
 /* =========================================
+   DESTINATION EXPAND / COLLAPSE
+========================================= */
+
+const destinationToggle =
+    document.getElementById("destinationToggle");
+
+const destinationToggleText =
+    document.getElementById("destinationToggleText");
+
+const destinationToggleIcon =
+    document.getElementById("destinationToggleIcon");
+
+const destinationExtras =
+    document.querySelectorAll(".destination-extra");
+
+if (destinationToggle) {
+
+    destinationToggle.addEventListener("click", () => {
+
+        const isExpanded =
+            destinationToggle.getAttribute("aria-expanded") === "true";
+
+        destinationExtras.forEach((card) => {
+            card.hidden = isExpanded;
+        });
+
+        destinationToggle.setAttribute(
+            "aria-expanded",
+            String(!isExpanded)
+        );
+
+        destinationToggleText.textContent =
+            isExpanded ? "More Destinations" : "Show Fewer Destinations";
+
+        destinationToggleIcon.textContent =
+            isExpanded ? "+" : "−";
+
+    });
+
+}
+
+
+/* =========================================
    MOBILE NAVIGATION
 ========================================= */
 
