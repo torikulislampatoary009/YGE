@@ -2127,3 +2127,201 @@ h2 span {
     color: #dc2626;
 
 }
+
+
+/* =========================================
+   YARA BRAND UPDATE
+   - Official company logo
+   - Teal/blue/purple brand gradient
+   - Mobile hero image above headline
+   - Full hero artwork visible without side cropping
+   - Google Maps beside the request form
+========================================= */
+
+:root {
+    --brand-teal: #10b6a5;
+    --brand-blue: #2f6fb4;
+    --brand-purple: #6b2fb5;
+    --brand-gradient: linear-gradient(135deg, var(--brand-teal) 0%, var(--brand-blue) 48%, var(--brand-purple) 100%);
+    --brand-gradient-soft: linear-gradient(135deg, rgba(16, 182, 165, .10) 0%, rgba(47, 111, 180, .08) 48%, rgba(107, 47, 181, .10) 100%);
+}
+
+/* Brand gradient for the site's main colored surfaces/buttons. */
+.nav-cta,
+.btn-primary,
+.logo-mark,
+.floating-icon,
+.feature-item > span,
+.service-icon,
+.contact-icon,
+.social-links a:hover,
+.tracking-input-wrapper button,
+.timeline-item.active .timeline-dot {
+    background: var(--brand-gradient);
+}
+
+.nav-cta:hover,
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0ca997 0%, #285fa4 48%, #5d27a5 100%);
+}
+
+/* Use the same brand identity for section/background surfaces without making text hard to read. */
+.hero,
+.services,
+.process,
+.contact,
+.tracking-section {
+    background: var(--brand-gradient-soft);
+}
+
+.cta,
+.footer {
+    background: var(--brand-gradient);
+}
+
+/* Official logo image */
+.logo-mark {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.logo-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-text small,
+.section-label,
+.text-link,
+.service-card a,
+.why-item > span,
+.stats-card strong,
+.experience-card strong,
+.process-number,
+.timeline-location {
+    color: var(--brand-purple);
+}
+
+/* Hero artwork: use its natural aspect ratio so the full company name is visible. */
+.hero-container {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 45px;
+}
+
+.hero-image {
+    height: auto;
+    aspect-ratio: 1155 / 814;
+    background: #ffffff;
+}
+
+.hero-image img {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Contact: information | map | request form */
+.contact-grid {
+    grid-template-columns: minmax(0, .85fr) minmax(0, .95fr) minmax(0, 1.2fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.contact-map {
+    min-width: 0;
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-map-heading h3 {
+    margin-top: 4px;
+    margin-bottom: 18px;
+    color: var(--secondary);
+    font-size: 22px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+.map-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-directions {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--brand-purple);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Keep the form readable beside the map. */
+.contact-form-wrapper {
+    min-width: 0;
+}
+
+@media (max-width: 1100px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-info {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Client requested the company image before "Connecting Bangladesh" on mobile. */
+    .hero-visual {
+        order: -1;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        width: 100%;
+        aspect-ratio: 1155 / 814;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-column: auto;
+    }
+
+    .map-frame {
+        height: 320px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-mark {
+        width: 44px;
+        height: 44px;
+    }
+
+    .hero-image {
+        aspect-ratio: 1155 / 814;
+    }
+
+    .map-frame {
+        height: 280px;
+    }
+}
