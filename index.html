@@ -788,8 +788,9 @@
                 </div>
 
 
-                <div class="destination-grid">
+                <div class="destination-grid" id="destinationGrid">
 
+                    <!-- Always visible destinations -->
                     <div class="destination-card">
                         <span>🇺🇸</span>
                         <h3>United States</h3>
@@ -826,6 +827,91 @@
                         <p>Europe</p>
                     </div>
 
+                    <!-- Additional destinations: shown after clicking + -->
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇦🇪</span>
+                        <h3>United Arab Emirates</h3>
+                        <p>Middle East</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇸🇦</span>
+                        <h3>Saudi Arabia</h3>
+                        <p>Middle East</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇫🇷</span>
+                        <h3>France</h3>
+                        <p>Europe</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇳🇱</span>
+                        <h3>Netherlands</h3>
+                        <p>Europe</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇯🇵</span>
+                        <h3>Japan</h3>
+                        <p>Asia</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇸🇬</span>
+                        <h3>Singapore</h3>
+                        <p>Asia</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇲🇾</span>
+                        <h3>Malaysia</h3>
+                        <p>Asia</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇰🇷</span>
+                        <h3>South Korea</h3>
+                        <p>Asia</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇨🇳</span>
+                        <h3>China</h3>
+                        <p>Asia</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇳🇿</span>
+                        <h3>New Zealand</h3>
+                        <p>Oceania</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇨🇭</span>
+                        <h3>Switzerland</h3>
+                        <p>Europe</p>
+                    </div>
+
+                    <div class="destination-card destination-extra" hidden>
+                        <span>🇪🇸</span>
+                        <h3>Spain</h3>
+                        <p>Europe</p>
+                    </div>
+
+                </div>
+
+                <div class="destination-toggle-wrap">
+                    <button
+                        type="button"
+                        class="destination-toggle btn btn-primary"
+                        id="destinationToggle"
+                        aria-expanded="false"
+                    >
+                        <span id="destinationToggleText">More Destinations</span>
+                        <span class="destination-toggle-icon" id="destinationToggleIcon" aria-hidden="true">+</span>
+                    </button>
                 </div>
 
             </div>
