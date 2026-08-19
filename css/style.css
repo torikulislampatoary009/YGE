@@ -2466,12 +2466,13 @@ h2 span {
    Mobile: image first, then Connecting Bangladesh text.
 ========================================= */
 .hero-container {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
 }
 
+/* The promotional picture is above the Connecting Bangladesh text on desktop and mobile. */
+.hero-visual { order: -1; }
 .hero-content { order: 1; }
-.hero-visual { order: 2; }
 
 /* =========================================
    FOOTER READABILITY
@@ -2543,13 +2544,6 @@ h2 span {
     .top-banner-prev { left: 8px; }
     .top-banner-next { right: 8px; }
 
-    .hero-visual {
-        order: -1;
-    }
-
-    .hero-content {
-        order: 1;
-    }
 }
 
 @media (max-width: 500px) {
