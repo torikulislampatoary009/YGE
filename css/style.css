@@ -431,7 +431,7 @@ h2 span {
 }
 
 .hero-image {
-    height: 520px;
+    height: 220px;
 
     overflow: hidden;
 
@@ -712,7 +712,7 @@ h2 span {
 
     border-radius: 12px;
 
-    color: var(--primary);
+    color: var(--white);
     background: #eff6ff;
 
     font-size: 23px;
