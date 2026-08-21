@@ -1050,6 +1050,13 @@ h2 span {
 }
 
 .contact-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.contact-top {
     display: grid;
 
     grid-template-columns:
@@ -1442,7 +1449,7 @@ h2 span {
 
     .about-grid,
     .why-grid,
-    .contact-grid {
+    .contact-top {
         grid-template-columns: 1fr;
     }
 
@@ -2265,9 +2272,9 @@ h2 span {
     object-fit: contain;
 }
 
-/* Contact: information | map | request form */
-.contact-grid {
-    grid-template-columns: minmax(0, .85fr) minmax(0, .95fr) minmax(0, 1.2fr);
+/* Contact: information | map, with request form below */
+.contact-top {
+    grid-template-columns: minmax(0, .85fr) minmax(0, .95fr);
     gap: 28px;
     align-items: start;
 }
@@ -2314,16 +2321,6 @@ h2 span {
     min-width: 0;
 }
 
-@media (max-width: 1100px) {
-    .contact-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contact-info {
-        grid-column: 1 / -1;
-    }
-}
-
 @media (max-width: 768px) {
     /* Client requested the company image before "Connecting Bangladesh" on mobile. */
     .hero-visual {
@@ -2339,12 +2336,8 @@ h2 span {
         aspect-ratio: 1155 / 814;
     }
 
-    .contact-grid {
+    .contact-top {
         grid-template-columns: 1fr;
-    }
-
-    .contact-info {
-        grid-column: auto;
     }
 
     .map-frame {
