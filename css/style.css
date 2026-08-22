@@ -2557,3 +2557,40 @@ h2 span {
         width: 20px;
     }
 }
+
+/* =========================================
+   HERO GAP + IMAGE HEIGHT FIX
+   - Tracking section sits right above the hero,
+     so pull the hero (and its image) closer to it.
+   - Cap the hero image's height on larger screens
+     so it doesn't grow huge with the full-width layout.
+========================================= */
+
+.tracking-section {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.hero {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 769px) {
+    .hero-image {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .tracking-section {
+        padding-top: 90px;
+        padding-bottom: 15px;
+    }
+
+    .hero {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+}
