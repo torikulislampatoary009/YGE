@@ -2579,7 +2579,7 @@ h2 span {
 @media (min-width: 769px) {
     .hero-image {
         width: 100%;
-        height: 420px;
+        height: 460px;
         aspect-ratio: unset;
     }
 
@@ -2587,6 +2587,7 @@ h2 span {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center top;
     }
 }
 
