@@ -2607,12 +2607,11 @@ h2 span {
    PAGE FRAME
    - Fills the empty sides on wide screens with the
      brand gradient, framing the site in a centered,
-     max-width white "page" (like ygexbd.com).
    - The fixed header stays full-width above the frame.
 ========================================= */
 
 body {
-    background: var(--brand-gradient);
+    background: linear-gradient(-90deg,rgb(102,45,145),rgb(0,167,157));
 }
 
 .page-frame {
