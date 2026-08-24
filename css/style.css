@@ -2607,17 +2607,76 @@ h2 span {
    PAGE FRAME
    - Fills the empty sides on wide screens with the
      brand gradient, framing the site in a centered,
+     max-width white "page" (like ygexbd.com).
    - The fixed header stays full-width above the frame.
 ========================================= */
 
 body {
-    background: linear-gradient(-90deg,rgb(102,45,145),rgb(0,167,157));
+    background: var(--brand-gradient);
 }
 
 .page-frame {
-    max-width: 1180px;
+    max-width: 1600px;
     margin: 0 auto;
     background: var(--white);
     overflow: hidden;
     box-shadow: 0 0 80px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================================
+   TOP BANNER CAPTIONS
+   - One headline per slide, revealed a moment after
+     the slide appears, as a gray band wiping in from
+     the left (matches ygexbd.com reference style).
+========================================= */
+
+.top-banner-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16%;
+    z-index: 2;
+
+    padding: 10px 20px;
+
+    background: rgba(60, 60, 60, 0.55);
+    text-align: center;
+
+    clip-path: inset(0 100% 0 0);
+}
+
+.top-banner-slide.active .top-banner-caption {
+    animation: bannerCaptionReveal 0.9s ease forwards;
+    animation-delay: 1.1s;
+}
+
+.top-banner-caption span {
+    display: inline-block;
+
+    color: #ffffff;
+    font-weight: 700;
+    font-size: clamp(16px, 2.6vw, 26px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes bannerCaptionReveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@media (max-width: 640px) {
+    .top-banner-caption {
+        padding: 8px 14px;
+    }
+
+    .top-banner-caption span {
+        font-size: clamp(13px, 4vw, 18px);
+        letter-spacing: 0.5px;
+    }
 }
