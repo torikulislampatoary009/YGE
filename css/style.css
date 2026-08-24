@@ -2616,7 +2616,7 @@ body {
 }
 
 .page-frame {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     background: var(--white);
     overflow: hidden;
