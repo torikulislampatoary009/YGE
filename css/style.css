@@ -181,7 +181,6 @@ textarea {
     display: flex;
     align-items: center;
     gap: 28px;
-    background: linear-gradient(-90deg,rgb(102,45,145),rgb(0,167,157));
 }
 
 .nav-link {
