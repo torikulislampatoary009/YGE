@@ -2365,7 +2365,7 @@ h2 span {
 ========================================= */
 .top-banner-slider {
     position: relative;
-    width: min(100%, 1180px);
+    width: min(100%, 1380px);
     margin: 80px auto 0;
     overflow: hidden;
     background: #ffffff;
