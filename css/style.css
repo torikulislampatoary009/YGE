@@ -2612,11 +2612,11 @@ h2 span {
 ========================================= */
 
 body {
-    background: var(--brand-gradient);
+    background: linear-gradient(-90deg,rgb(102,45,145),rgb(0,167,157));
 }
 
 .page-frame {
-    max-width: 1600px;
+    max-width: 1180px;
     margin: 0 auto;
     background: var(--white);
     overflow: hidden;
