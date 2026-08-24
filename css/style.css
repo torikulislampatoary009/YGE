@@ -186,7 +186,7 @@ textarea {
 .nav-link {
     position: relative;
 
-    color: var(--text);
+    color: var(--white);
 
     font-size: 14px;
     font-weight: 600;
@@ -196,7 +196,7 @@ textarea {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--primary);
+    color: var(--white);
 }
 
 .nav-cta {
