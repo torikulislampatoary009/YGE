@@ -158,7 +158,7 @@ textarea {
     display: flex;
     flex-direction: column;
 
-    color: linear-gradient(-90deg,rgb(102,45,145),rgb(0,167,157));
+    color: var(--primary-dark);
 
     font-size: 18px;
     line-height: 1.1;
