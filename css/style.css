@@ -2602,3 +2602,23 @@ h2 span {
         padding-bottom: 50px;
     }
 }
+
+/* =========================================
+   PAGE FRAME
+   - Fills the empty sides on wide screens with the
+     brand gradient, framing the site in a centered,
+     max-width white "page" (like ygexbd.com).
+   - The fixed header stays full-width above the frame.
+========================================= */
+
+body {
+    background: var(--brand-gradient);
+}
+
+.page-frame {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: var(--white);
+    overflow: hidden;
+    box-shadow: 0 0 80px rgba(15, 23, 42, 0.18);
+}
