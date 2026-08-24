@@ -19,7 +19,7 @@
 
     --white: #ffffff;
 
-    --container: 1180px;
+    --container: 1380px;
 
     --radius-sm: 8px;
     --radius-md: 14px;
@@ -243,7 +243,7 @@ textarea {
 
     margin: 5px auto;
 
-    background: var(--secondary);
+    background: var(--primary);
 
     transition: var(--transition);
 }
