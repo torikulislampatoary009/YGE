@@ -750,9 +750,9 @@ h2 span {
 .so {
     padding: 80px 0;
 
-    color: var(--white);
+    color: var(--primary-dark);
 
-    background: var(--primary);
+    background: var(--white);
 }
 
 .so .section-label {
