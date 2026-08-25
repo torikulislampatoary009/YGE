@@ -1435,11 +1435,13 @@ h2 span {
     }
 
     .floating-card-top {
+        top:0px;
         left: 0px;
     }
 
     .floating-card-bottom {
-        right: 10px;
+        bottom:0px;
+        right: 0px;
     }
 
 
