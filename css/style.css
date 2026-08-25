@@ -1093,7 +1093,7 @@ h2 span {
     flex-shrink: 0;
 
     border-radius: 10px;
-
+    colour:var(--white);
     background: #eff6ff;
 }
 
@@ -1350,7 +1350,9 @@ h2 span {
 
 
 @media (max-width: 768px) {
-
+    . header{
+       background:var(--white);
+    }
     .container {
         width: min(
             calc(100% - 30px),
