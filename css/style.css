@@ -1134,7 +1134,7 @@ h2 span {
 
     border-radius: 10px;
     colour:var(--white);
-    background: var(--primary);
+    background: #eff6ff;
 }
 
 .contact-item strong {
