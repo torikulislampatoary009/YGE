@@ -1146,7 +1146,7 @@ h2 span {
 }
 
 .contact-item p {
-    color: var(--primary);
+    color: var(--text-light);
 
     font-size: 14px;
 }
@@ -1293,9 +1293,9 @@ h2 span {
 
 .footer-column a,
 .footer-column span {
-    color: #94a3b8;
+    color: var(--white);
 
-    font-size: 12px;
+    font-size: 13px;
 
     transition: var(--transition);
 }
