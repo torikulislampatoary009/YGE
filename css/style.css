@@ -1146,7 +1146,7 @@ h2 span {
 }
 
 .contact-item p {
-    color: var(--text-light);
+    color: var(--primary);
 
     font-size: 13px;
 }
