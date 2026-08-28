@@ -771,7 +771,7 @@ h2 span {
 .so h3 {
     margin-bottom: 12px;
 
-    font-size: clamp(20px, 4vw, 45px);
+    font-size: clamp(20px, 4vw, 25px);
 
     line-height: 1.15;
 }
