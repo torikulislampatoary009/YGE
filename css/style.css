@@ -1,7 +1,5 @@
 
-/* =========================================
-   VARIABLES
-========================================= */
+/*VARIABLES*/
 
 :root {
 
@@ -35,9 +33,7 @@
 }
 
 
-/* =========================================
-   RESET
-========================================= */
+/*RESET */
 
 * {
     margin: 0;
@@ -75,9 +71,7 @@ textarea {
 }
 
 
-/* =========================================
-   CONTAINER
-========================================= */
+/*CONTAINER*/
 
 .container {
     width: min(
@@ -89,9 +83,7 @@ textarea {
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/*HEADER*/
 
 .header {
     position: fixed;
@@ -127,9 +119,7 @@ textarea {
 }
 
 
-/* =========================================
-   LOGO
-========================================= */
+/*LOGO*/
 
 .logo {
     display: flex;
@@ -173,9 +163,7 @@ textarea {
 }
 
 
-/* =========================================
-   NAVIGATION
-========================================= */
+/*Nvigation*/
 
 .nav {
     display: flex;
@@ -219,9 +207,7 @@ textarea {
 }
 
 
-/* =========================================
-   MOBILE MENU
-========================================= */
+/*MOBILE MENU*/
 
 .menu-toggle {
     display: none;
@@ -249,9 +235,7 @@ textarea {
 }
 
 
-/* =========================================
-   HERO
-========================================= */
+/*HERO*/
 
 .hero {
     padding-top: 140px;
@@ -333,9 +317,7 @@ h2 span {
 }
 
 
-/* =========================================
-   BUTTONS
-========================================= */
+/*BUTTONS */
 
 .btn {
     display: inline-flex;
@@ -395,9 +377,7 @@ h2 span {
 }
 
 
-/* =========================================
-   HERO TRUST
-========================================= */
+/*HERO TRUST*/
 
 .hero-trust {
     display: flex;
@@ -422,9 +402,7 @@ h2 span {
 }
 
 
-/* =========================================
-   HERO IMAGE
-========================================= */
+/* HERO IMAGE*/
 
 .hero-visual {
     position: relative;
@@ -500,9 +478,7 @@ h2 span {
 }
 
 
-/* =========================================
-   SECTIONS
-========================================= */
+/*  SECTIONS */
 
 .section {
     padding: 110px 0;
@@ -538,9 +514,7 @@ h2 span {
 }
 
 
-/* =========================================
-   ABOUT
-========================================= */
+/* ABOUT*/
 
 .about {
     background: var(--background);
@@ -664,9 +638,7 @@ h2 span {
 }
 
 
-/* =========================================
-   SERVICES
-========================================= */
+/* SERVICES*/
 
 .services {
     background: var(--background-light);
@@ -743,9 +715,7 @@ h2 span {
     font-weight: 700;
 }
 
-/* =========================================
-   Services Overview
-========================================= */
+/* Services Overview*/
 
 .so {
     padding: 80px 0;
@@ -893,9 +863,7 @@ h2 span {
 }
 
 
-/* =========================================
-   PROCESS
-========================================= */
+/* PROCESS*/
 
 .process {
     background: var(--background-light);
@@ -944,9 +912,7 @@ h2 span {
 }
 
 
-/* =========================================
-   DESTINATIONS
-========================================= */
+/*DESTINATIONS*/
 
 .destination-grid {
     display: grid;
@@ -1039,9 +1005,7 @@ h2 span {
 }
 
 
-/* =========================================
-   CTA
-========================================= */
+/*CTA*/
 
 .cta {
     padding: 80px 0;
@@ -1081,9 +1045,7 @@ h2 span {
 }
 
 
-/* =========================================
-   CONTACT
-========================================= */
+/* CONTACT*/
 
 .contact {
     background: var(--background-light);
@@ -1236,9 +1198,7 @@ h2 span {
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/*FOOTER*/
 
 .footer {
     padding-top: 70px;
@@ -1351,9 +1311,7 @@ h2 span {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/*RESPONSIVE*/
 
 @media (max-width: 1000px) {
 
@@ -1602,9 +1560,7 @@ h2 span {
     }
 
 }
-/* =========================================
-   SHIPMENT TRACKING
-========================================= */
+/*SHIPMENT TRACKING */
 
 .tracking-section {
 
@@ -1941,9 +1897,7 @@ h2 span {
 }
 
 
-/* =========================================
-   TIMELINE
-========================================= */
+/* TIMELINE */
 
 .tracking-timeline {
 
@@ -2091,9 +2045,7 @@ h2 span {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -2221,14 +2173,7 @@ h2 span {
 }
 
 
-/* =========================================
-   YARA BRAND UPDATE
-   - Official company logo
-   - Teal/blue/purple brand gradient
-   - Mobile hero image above headline
-   - Full hero artwork visible without side cropping
-   - Google Maps beside the request form
-========================================= */
+/* Update Verson */
 
 :root {
     --brand-teal: #10b6a5;
@@ -2299,7 +2244,7 @@ h2 span {
     color: var(--brand-purple);
 }
 
-/* Hero artwork: use its natural aspect ratio so the full company name is visible. */
+
 .hero-container {
     grid-template-columns: 0.9fr 1.1fr;
     gap: 45px;
@@ -2316,7 +2261,7 @@ h2 span {
     object-fit: contain;
 }
 
-/* Contact: information | map, with request form below */
+
 .contact-top {
     grid-template-columns: minmax(0, .85fr) minmax(0, .95fr);
     gap: 28px;
@@ -2366,7 +2311,7 @@ h2 span {
 }
 
 @media (max-width: 768px) {
-    /* Client requested the company image before "Connecting Bangladesh" on mobile. */
+   
     .hero-visual {
         order: -1;
     }
@@ -2404,9 +2349,7 @@ h2 span {
     }
 }
 
-/* =========================================
-   TOP PROMOTIONAL IMAGE SLIDER
-========================================= */
+/* TOP PROMOTIONAL IMAGE SLIDER */
 .top-banner-slider {
     position: relative;
     width: min(100%, 1580px);
@@ -2497,23 +2440,17 @@ h2 span {
     background: linear-gradient(90deg, #0ca997, #5d27a5);
 }
 
-/* =========================================
-   HERO LAYOUT
-   Desktop: text + image side by side.
-   Mobile: image first, then Connecting Bangladesh text.
-========================================= */
+
 .hero-container {
     grid-template-columns: minmax(0, 1fr);
     align-items: stretch;
 }
 
-/* The promotional picture is above the Connecting Bangladesh text on desktop and mobile. */
+
 .hero-visual { order: -1; }
 .hero-content { order: 1; }
 
-/* =========================================
-   FOOTER READABILITY
-========================================= */
+/*FOOTER READABILITY*/
 .footer {
     color: rgba(255, 255, 255, 0.9);
 }
@@ -2548,9 +2485,7 @@ h2 span {
     background: rgba(255, 255, 255, 0.28);
 }
 
-/* =========================================
-   CONTACT MAP
-========================================= */
+/*CONTACT MAP*/
 .contact-map {
     background: rgba(255, 255, 255, 0.96);
 }
@@ -2602,13 +2537,6 @@ h2 span {
     }
 }
 
-/* =========================================
-   HERO GAP + IMAGE HEIGHT FIX
-   - Tracking section sits right above the hero,
-     so pull the hero (and its image) closer to it.
-   - Cap the hero image's height on larger screens
-     so it doesn't grow huge with the full-width layout.
-========================================= */
 
 .tracking-section {
     padding-top: 100px;
@@ -2647,13 +2575,7 @@ h2 span {
     }
 }
 
-/* =========================================
-   PAGE FRAME
-   - Fills the empty sides on wide screens with the
-     brand gradient, framing the site in a centered,
-     max-width white "page" (like ygexbd.com).
-   - The fixed header stays full-width above the frame.
-========================================= */
+/*PAGE FRAME
 
 body {
     background: linear-gradient(-90deg,rgb(102,45,145),rgb(0,167,157));
@@ -2667,12 +2589,6 @@ body {
     box-shadow: 0 0 80px rgba(15, 23, 42, 0.18);
 }
 
-/* =========================================
-   TOP BANNER CAPTIONS
-   - One headline per slide, revealed a moment after
-     the slide appears, as a gray band wiping in from
-     the left (matches ygexbd.com reference style).
-========================================= */
 
 .top-banner-caption {
     position: absolute;
