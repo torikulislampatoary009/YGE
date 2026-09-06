@@ -794,9 +794,31 @@ async function handleQuoteSubmit(
 
     try {
 
+        // Send a copy to the existing backend (best-effort, doesn't
+        // block the email below if this is slow or unreachable).
+        fetch(
+            "https://yge-backend.onrender.com/api/quotes",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type":
+                        "application/json"
+                },
+                body:
+                    JSON.stringify(
+                        requestData
+                    )
+            }
+        ).catch(function () {});
+
+
+        // Email the full request straight to the client's inbox.
+        // Uses FormSubmit.co - no signup/API key needed, but the
+        // very first submission requires nipufeni@gmail.com to
+        // click a one-time activation link FormSubmit emails them.
         const response =
             await fetch(
-                "https://yge-backend.onrender.com/api/quotes",
+                "https://formsubmit.co/ajax/nipufeni@gmail.com",
                 {
 
                     method: "POST",
@@ -804,14 +826,38 @@ async function handleQuoteSubmit(
                     headers: {
 
                         "Content-Type":
+                            "application/json",
+
+                        "Accept":
                             "application/json"
 
                     },
 
                     body:
-                        JSON.stringify(
-                            requestData
-                        )
+                        JSON.stringify({
+                            _subject:
+                                "New Quote Request - Yara Global Express",
+                            Name:
+                                requestData.name,
+                            Phone:
+                                requestData.phone,
+                            Email:
+                                requestData.email,
+                            Company:
+                                requestData.company,
+                            From:
+                                requestData.origin_country,
+                            To:
+                                requestData.destination_country,
+                            Service:
+                                requestData.service_type,
+                            "Package Type":
+                                requestData.package_type,
+                            "Weight (KG)":
+                                requestData.weight,
+                            Message:
+                                requestData.message
+                        })
 
                 }
             );
