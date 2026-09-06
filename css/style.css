@@ -148,7 +148,7 @@ textarea {
     display: flex;
     flex-direction: column;
 
-    color: var(--primary-dark);
+    color: var(--white);
 
     font-size: 18px;
     line-height: 1.1;
@@ -1350,6 +1350,9 @@ h2 span {
 @media (max-width: 768px) {
     .header{
        background:var(--white);
+    }
+    .logo-text{
+        color:var(--primary-dark);
     }
     .container {
         width: min(
