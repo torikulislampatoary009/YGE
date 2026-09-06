@@ -718,8 +718,8 @@ h2 span {
 /* Services Overview*/
 
 .so {
-    padding-top: 100px ;
-    padding-bottom:100px ;
+    padding-top: 150px ;
+    padding-bottom:130px ;
     color: var(--primary);
 
     background: var(--white);
