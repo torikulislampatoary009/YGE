@@ -17,7 +17,7 @@
 
     --white: #ffffff;
 
-    --container: 100%;
+    --container: calc(100%-30px);
 
     --radius-sm: 8px;
     --radius-md: 14px;
