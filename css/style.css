@@ -17,7 +17,7 @@
 
     --white: #ffffff;
 
-    --container: 1580px;
+    --container: 100%;
 
     --radius-sm: 8px;
     --radius-md: 14px;
@@ -74,10 +74,7 @@ textarea {
 /*CONTAINER*/
 
 .container {
-    width: min(
-        calc(100% - 40px),
-        var(--container)
-    );
+    width:var(--container);
 
     margin-inline: auto;
 }
@@ -2358,7 +2355,7 @@ h2 span {
 /* TOP PROMOTIONAL IMAGE SLIDER */
 .top-banner-slider {
     position: relative;
-    width: min(100%, 1580px);
+    width:100%;
     margin: 80px auto 0;
     overflow: hidden;
     background: #ffffff;
@@ -2588,7 +2585,7 @@ body {
 }
 
 .page-frame {
-    max-width: 1580px;
+    width: 100%;
     margin: 0 auto;
     background: var(--white);
     overflow: hidden;
