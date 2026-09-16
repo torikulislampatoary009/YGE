@@ -17,7 +17,7 @@
 
     --white: #ffffff;
 
-    --container: calc(100%-100px);
+    --container: 1980px;
 
     --radius-sm: 8px;
     --radius-md: 14px;
@@ -74,7 +74,7 @@ textarea {
 /*CONTAINER*/
 
 .container {
-    width:calc(100%-50px);
+    width:min(calc(100%-40px),1980px);
 
     margin-inline: auto;
 }
