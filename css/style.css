@@ -74,7 +74,7 @@ textarea {
 /*CONTAINER*/
 
 .container {
-    width:min(calc(100%-40px),1780px);
+    width: min(calc(100% - 30px), 1780px);
 
     margin-inline: auto;
 }
@@ -2443,15 +2443,6 @@ h2 span {
     background: linear-gradient(90deg, #0ca997, #5d27a5);
 }
 
-
-.hero-container {
-    grid-template-columns: minmax(0, 1fr);
-    align-items: stretch;
-}
-
-
-.hero-visual { order: -1; }
-.hero-content { order: 1; }
 
 /*FOOTER READABILITY*/
 .footer {
