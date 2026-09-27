@@ -2555,6 +2555,9 @@ h2 span {
         object-fit: cover;
         object-position: center top;
     }
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
