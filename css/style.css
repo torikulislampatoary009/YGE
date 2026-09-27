@@ -294,13 +294,13 @@ h2 span {
 }
 
 .hero-content > p {
-    max-width: 600px;
+    max-width: 1800px;
 
     margin-bottom: 32px;
 
     color: var(--text-light);
 
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
