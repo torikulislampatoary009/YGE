@@ -287,7 +287,6 @@ textarea {
 }
 
 .hero-text{
-    display: block;
 
     color: var(--primary);
 }
