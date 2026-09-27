@@ -2543,6 +2543,11 @@ h2 span {
 }
 
 @media (min-width: 769px) {
+
+    .hero-visual {
+        order: -1;
+    }
+
     .hero-image {
         width: 100%;
         height: 650px;
@@ -2555,6 +2560,7 @@ h2 span {
         object-fit: cover;
         object-position: center top;
     }
+    
     .hero-container {
         grid-template-columns: 1fr;
     }
