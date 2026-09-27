@@ -2355,7 +2355,7 @@ h2 span {
 /* TOP PROMOTIONAL IMAGE SLIDER */
 .top-banner-slider {
     position: relative;
-    width:100%;
+    width:min(100%,1800px);
     margin: 80px auto 0;
     overflow: hidden;
     background: #ffffff;
