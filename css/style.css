@@ -286,8 +286,7 @@ textarea {
     letter-spacing: -2px;
 }
 
-.hero h1 span,
-h2 span {
+.hero-text{
     display: block;
 
     color: var(--primary);
