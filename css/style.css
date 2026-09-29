@@ -2583,7 +2583,7 @@ body {
 }
 
 .page-frame {
-    width: min(100%,1700px);
+    width: min(100%,1600px);
     margin: 0 auto;
     background: var(--white);
     overflow: hidden;
