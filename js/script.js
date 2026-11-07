@@ -1,13 +1,13 @@
 //jk
-/* =========================================
+/* 
    YEARA GLOBAL EXPRESS
    Main JavaScript
-========================================= */
+*/
 
 
-/* =========================================
+/*
    DOM ELEMENTS
-========================================= */
+*/
 
 const header = document.getElementById("header");
 
@@ -24,9 +24,8 @@ const formMessage = document.getElementById("form-message");
 const currentYear = document.getElementById("current-year");
 
 
-/* =========================================
-   DESTINATION EXPAND / COLLAPSE
-========================================= */
+/* 
+   DESTINATION EXPAND / COLLAP */
 
 const destinationToggle =
     document.getElementById("destinationToggle");
@@ -818,7 +817,7 @@ async function handleQuoteSubmit(
         // click a one-time activation link FormSubmit emails them.
         const response =
             await fetch(
-                "https://formsubmit.co/ajax/nipufeni@gmail.com",
+                "https://formsubmit.co/ajax/torikulislampatoary@gmail.com",
                 {
 
                     method: "POST",
